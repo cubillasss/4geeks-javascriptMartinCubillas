@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Excusas</title>
+</head>
+<body>
+    <h1>Generador de Excusas</h1>
+    <div id="excusa"></div>
+    <script>
+        const excusas = [
+            "Mi perro se comió la tarea.",
+            "Había mucho tráfico.",
+            "Se me olvidó poner la alarma.",
+            "Tuve una emergencia familiar.",
+            "Me sentía mal esta mañana.",
+            "Hubo un apagón en mi casa.",
+            "Perdí el autobús.",
+            "Tuve que ayudar a un amigo.",
+            "Me quedé sin batería en el celular.",
+            "No me sonó el despertador."
+        ];
+
+        let indiceAleatorio = Math.floor(Math.random() * excusas.length);
+        let excusa = excusas[indiceAleatorio];
+        document.getElementById('excusa').innerText = excusa;
+    </script>
+</body>
+</html>
